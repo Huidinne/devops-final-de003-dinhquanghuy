@@ -104,7 +104,7 @@ jobs:
       packages: read
     steps:
       - name: Deploy qua SSH
-        uses: appleboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@v1.8.0
         env:
           APP_IMAGE: ${{ needs.build.outputs.image }}
           APP_TAG: ${{ github.sha }}
